@@ -40,7 +40,7 @@ except Exception as e:
     print("An error occurred:", e)
 
 #specifying file path to store data
-file_path = 'C:\\Yadanar\\Learning Resources\\Python\\WebScraping\\reddit_data.json'
+file_path = 'reddit_data.json' #specify file path
 
 #Write the data to a JSON file
 with open(file_path, 'w', encoding='utf-8') as file:
