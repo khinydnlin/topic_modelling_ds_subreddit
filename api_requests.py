@@ -3,8 +3,8 @@ import datetime
 import json
 
 reddit = praw.Reddit(
-    client_id = "3HPnkxQhCGdmhERUAHglyg",
-    client_secret = "06KvTz7-EcbY-xuDvv7dLtH4BNTKpA",
+    client_id = " ",#replace client_id
+    client_secret = " ",#replace_client_secret
     user_agent = "my-app u/m_runthat",
 )
 
