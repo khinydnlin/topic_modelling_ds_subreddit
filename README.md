@@ -100,13 +100,22 @@ This topic likely covers aspects of problem-solving, modeling, and the applicati
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/014bb0ed-5542-40d6-a843-b9f0a1336534)
 
-
+### Modelling
 
 #### Text Preprocessing
 
-- The data are right skewed. Hence, a log transformation was used to achieve a normal distribution.
-- To reduce the dimensionality of the features, the car brands were regrouped into three groups: high-end brands (Toyota) , mid-range brands (Honda, Nissan and Mitsubishi), and Low-end brands (Suzuki and Daihatsu). Note that this grouping was determined based on the price distributions in the dataset.
-- Similarly, I also regrouped the colours into two groups: black and others, as the black colour seems to be the main differentiator. I also combined the 'semi-auto' and 'manual' into one group.
+As for text preprocessing, the urls, line breaks, and digits were removed. For sentiment analysis, Vader lexicon-based sentiment analyser was used due to its capability to detect emjois and informal language which is common in social media lanaguage. The compound polarity scores obtained from the analysis were then regrouped into three sentiment classes: positive ( > 0.05 ) , negative ( < 0.05 ), and neutral. 
+
+To prepare for topic modelling, the stopwords list from nltk was updated by adding custom stopwords that are domain-specific and reddit-specific slangs/words. For example, words like data science is likely to occur in majority of posts. Similarly, words like 'op' (Original poster) is quite common on Reddit.
+
+Custom Stopwords Removal:
+
+'back','go','like','get','take','feel','see','also','will','would','lot','stuff','maybe','even',
+'actually','probably','may','sure','post','around','one','still','someone','thing','analyst','might','want',
+'well','two','pretty','anything','something','already','never','able','ago','bit','cause','cuz','basically',
+'yes','no','never','almost','anyone','science','scientist','scientists','data','op','ds','really','will','many',
+'much','something','everything','always','etc',
+
 
 ####
 
@@ -115,8 +124,6 @@ This topic likely covers aspects of problem-solving, modeling, and the applicati
 | LDA Model (Before tuning) | = 79871           | 196        |
 | LDA Model (Before tuning) | - 79794           | 195        |
 
-
-The final score on test set is R2 - 0.834, MAE - 1,921
 
 #### Challenges and Further Model Improvement
 
