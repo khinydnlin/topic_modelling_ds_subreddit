@@ -49,15 +49,18 @@ The following are the top 10 topics with highest engagement scores in 2023:
 
 It appears that the discussions around job market (possibly due to the massive layoffs in tech industry) received more attention compared to other topics. 
 
-![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/3a42e7c6-c2f8-433e-b4bc-158a259f8385)
+![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/2c0d8a7f-914c-4adb-b025-aa135d785a97)
+
 
 ## Sentiment Analysis
 
-![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/4ee9e69c-271e-4a27-aa1a-5802d43d3ca7)
+![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/67ca1d7f-3993-4c82-9aa9-5b8605579b81)
 
 
 
-![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/34dd8506-607e-41b7-b412-186a4e4040e5)
+
+![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/c881f882-5499-48a1-9da9-90ec0dc36bed)
+
 
 
 ## Topic Modelling
