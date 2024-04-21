@@ -120,9 +120,8 @@ The final score on test set is R2 - 0.834, MAE - 1,921
 
 #### Challenges and Further Model Improvement
 
-- Data Availability : The dataset comprises only 500 data points, which is insufficient to cover all car models. This limitation constrains the model's ability to generalize across the full spectrum of vehicles.
+- Text mining is an iterative process and involved a lot of subjective judgement. During this process, I learned the shortcomings of some algorithm. For example, Vader fails to detect certain slangs and sarcasms such as incorrectly identifying "bullshit" as a positive statement.
 
-- Overfitting issues: There is a model performance gap (6%) between the test set and the training set. Despite efforts in parameter tuning to reduce overfitting, this gap persisted, likely due to the small sample size and imbalanced class distribution among car models. Given that Toyota models constitute the majority of the dataset, the model may struggle to generalize effectively to less represented or unseen models.
 
 
 
