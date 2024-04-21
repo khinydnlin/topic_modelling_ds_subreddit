@@ -90,6 +90,9 @@ Here, the emphasis seems to be on the learning journey and career advice within 
 
 This topic likely covers aspects of problem-solving, modeling, and the application of analytics and artificial intelligence in data science. The mention of "problem," "model," "analytics," "ai," and "research" points to discussions about tackling specific data science problems or projects, possibly in a team or product development environment.
 
+![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/014bb0ed-5542-40d6-a843-b9f0a1336534)
+
+
 
 #### Text Preprocessing
 
