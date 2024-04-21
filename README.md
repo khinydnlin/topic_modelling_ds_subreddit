@@ -26,23 +26,6 @@ This project was carried out as part of freelance contract for one of the automo
 
 ### Data Sources
 
-The data was manually collected from the major car brokers in the market because of the lack of public data on resale prices. The following featuers were collected:
-
-| Data                  |
-| ----------------------|
-| car brand             |
-| car make              |
-| engine power          | 
-| mileage in km         |  
-| colour                |
-| steering position     |
-| transimission type    |
-| fuel type             |
-| car body type         |
-| price in MMK          |
-| price in USD          |
-*Note: 1 USD - 1,400 Myanmar Kyats (MMK) exchange rate was used
-
 ### Machine Learning Model Development 
 
 #### Insights
