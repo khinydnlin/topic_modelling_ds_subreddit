@@ -4,7 +4,7 @@
 
 ## Project Objective
 
-[Data Science subreddit](https://www.reddit.com/r/datascience/) is the largest data science community on Reddit with over 1.6 million members. Due to the anonymous nature, a lot of discussions around career, job, as well as technical challenges are typically found in this subreddit. As a data professional myself, I often resort to this subreddit stay up to date with the job market, read the technical solutions of peers, etc. This led me to wonder what topics are trending and the sentiment around the discussions. The objective is to extract the themes among the top posts from 2023 and also to understand the sentiment by different flairs. 
+[Data Science subreddit](https://www.reddit.com/r/datascience/) is the largest data science community on Reddit with over 1.6 million members. Due to its anonymous nature, it is a rich source of discussions about careers, job opportunities, and technical challenges. As a data professional, I frequently visit this subreddit to stay updated on the job market and to read about both technical and workplace challenges faced by peers. This piqued my curiosity about the trending topics and the sentiment surrounding these discussions. The objective of this project is to extract and analyse the main themes from the top posts of 2023 and to understand the sentiment associated with different flairs.
 
 ### Skills Used
 * Data Crawling using Reddit API
