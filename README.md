@@ -43,10 +43,11 @@ Top Posts (2023)
 
 ## Exploratory Analysis
 
-In 2023, the following topics were the top 10 topics with highest scores:
+The following are the top 10 topics with highest engagement scores in 2023:
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/80a1fa41-bc95-4136-848d-342be8365417)
 
+It appears that the discussions around job market (possibly due to the massive layoffs in tech industry) received more attention compared to other topics. 
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/3a42e7c6-c2f8-433e-b4bc-158a259f8385)
 
