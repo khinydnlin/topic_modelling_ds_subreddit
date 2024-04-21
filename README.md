@@ -116,9 +116,9 @@ To prepare for topic modelling, the stopwords list from nltk was updated by addi
 'yes','no','never','almost','anyone','science','scientist','scientists','data','op','ds','really','will','many',
 'much','something','everything','always','etc',
 
-**Experimenting with different parameters for vectorization/tokenization
+**Experimenting with different parameters for vectorization/tokenization**
 
-**Hyperparameter tuning for LDA model using random-search
+**Hyperparameter tuning for LDA model using random-search**
 
 
 | LDA Model                 | Log Likelihood    |  Perplexity|
