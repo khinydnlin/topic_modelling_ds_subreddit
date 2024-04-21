@@ -53,7 +53,8 @@ It appears that the discussions around job market (possibly due to the massive l
 
 ## Sentiment Analysis
 
-![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/408469db-e0fe-40fc-9182-8c5d7722712d)
+![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/4ee9e69c-271e-4a27-aa1a-5802d43d3ca7)
+
 
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/34dd8506-607e-41b7-b412-186a4e4040e5)
