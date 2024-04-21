@@ -1,19 +1,22 @@
-# Car Auction Price Predictions (Myanmar)
+# Topic Modelling and Sentiment Analysis - Data Science Subreddit
 
-#### -- Project: Freelance Project
+#### -- Project Status - Completed
 
 ## Project Objective
-This project was carried out as part of freelance contract for one of the automotive players in Myanmar back in 2019. Until recently, due to import restrictions, Myanmar's automotive market was primarily dominated by the second-hand cars. As a result, the market lacked transparency and a proper pricing mechanism as the transactions were mainly handled by unofficial car brokers. The objective of the project was to understand the factors influencing the second-hand car prices and to estimate the car prices based on their attribtues. The end goal was to develop a data-driven fair pricing mechanism for an automotive platform.
+
+[Data Science subreddit](https://www.reddit.com/r/datascience/) is the largest data science community on Reddit with over 1.6 million members. Due to the anonymous nature, a lot of discussions around career, job, as well as technical challenges are typically found in this subreddit. As a data professional myself, I often resort to this subreddit stay up to date with the job market, read the technical solutions of peers, etc. This led me to wonder what topics are trending and the sentiment around the discussions. The objective is to extract the themes among the top posts from 2023 and also to understand the sentiment by different flairs. 
 
 ### Skills Used
-* Data Collection
-* Linear Regression
-* Ridge Regression
-* Lasso Regression
-* Random Forest
+* Data Crawling using Reddit API
+* Text Mining
+* Topic Modelling
+* Sentiment Analysis
 
 ### Technologies
-* Python 
+* Python
+* NLTK
+* Tfidf Vectorizer (sklearn)
+* LDA (sklearn) 
 
 ## Getting Started
 
@@ -26,13 +29,28 @@ This project was carried out as part of freelance contract for one of the automo
 
 ### Data Sources
 
-### Machine Learning Model Development 
+The following information were retrieved from the subreddit using Reddit API Wrapper (PRAW):
 
-#### Insights
+Top Posts (2023)
+- date and time
+- flair
+- engagement score (upvotes minus downvotes)
+- titles
+- contents
+- top 5 comments
+
+### Key Insights
+
+## Exploratory Analysis
+
+In 2023, the following topics were the top 10 topics with highest scores:
+
+![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/80a1fa41-bc95-4136-848d-342be8365417)
+
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/3a42e7c6-c2f8-433e-b4bc-158a259f8385)
 
-### Sentiment Analysis
+## Sentiment Analysis
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/408469db-e0fe-40fc-9182-8c5d7722712d)
 
@@ -40,7 +58,7 @@ This project was carried out as part of freelance contract for one of the automo
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/34dd8506-607e-41b7-b412-186a4e4040e5)
 
 
-### Topic Modelling
+## Topic Modelling
 
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/990c8dbe-6b44-43a2-9ade-9a2a8ce32f8e)
