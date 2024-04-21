@@ -57,7 +57,7 @@ This topic appears to center around the job market and career development in the
 
 - Skills and Tools
 
-This topic focuses on the practical skills and tools necessary in data science, such as Python, SQL, and general analytical skills. Terms like "python," "skill," "sql," and "big job" emphasize the technical competencies needed to succeed in the field and discussions about how to improve or acquire these skills.
+This topic focuses on the practical skills and tools necessary in data science, such as Python, SQL, and general analytical skills. Terms like "python," "skill," "sql," and "big company" emphasize the technical competencies needed to succeed in the field and discussions about how to improve or acquire these skills.
 
 - Learning and Career Development
 
