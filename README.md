@@ -41,7 +41,7 @@ Top Posts (2023)
 
 ### Key Insights
 
-## Exploratory Analysis
+#### Exploratory Analysis
 
 The following are the top 10 topics with highest engagement scores in 2023:
 
@@ -52,7 +52,7 @@ It appears that the discussions around job market (possibly due to the massive l
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/2c0d8a7f-914c-4adb-b025-aa135d785a97)
 
 
-## Sentiment Analysis
+#### Sentiment Analysis
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/67ca1d7f-3993-4c82-9aa9-5b8605579b81)
 
@@ -63,7 +63,7 @@ It appears that the discussions around job market (possibly due to the massive l
 
 
 
-## Topic Modelling
+#### Topic Modelling
 
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/990c8dbe-6b44-43a2-9ade-9a2a8ce32f8e)
@@ -91,21 +91,13 @@ Here, the emphasis seems to be on the learning journey and career advice within 
 This topic likely covers aspects of problem-solving, modeling, and the application of analytics and artificial intelligence in data science. The mention of "problem," "model," "analytics," "ai," and "research" points to discussions about tackling specific data science problems or projects, possibly in a team or product development environment.
 
 
-#### Feature Engineering
+#### Text Preprocessing
 
 - The data are right skewed. Hence, a log transformation was used to achieve a normal distribution.
 - To reduce the dimensionality of the features, the car brands were regrouped into three groups: high-end brands (Toyota) , mid-range brands (Honda, Nissan and Mitsubishi), and Low-end brands (Suzuki and Daihatsu). Note that this grouping was determined based on the price distributions in the dataset.
 - Similarly, I also regrouped the colours into two groups: black and others, as the black colour seems to be the main differentiator. I also combined the 'semi-auto' and 'manual' into one group.
 
-#### Model Exploration
-
-- As a baseline model, a Linear Regression model was chosen for comparison purposes. Since a non-linearity was also detected, a Random Forest model was explored to uncover complex patterns.
-
-- As a primary metric, the goal was to achieve a low Mean Absolute Error (MAE) value of 1,000 - 2,000 USD, which was equivalent to 15 - 30 lakhs MMK at the time.
-
-- For Linear regression, it was found that the model comformed to primary assumptions: linearity, indepedence of residuals (with Durbin Watson test score between 1.5 and 2.5), improved normality after log transformation, and homosdeasticity with randomly scattered residuals. However, some multicollinearity issues were also identified. So, Ridge and Lasso regularisation were explored. Prior to conducting regularisation, it was ensured that the training data and test data were standardised properly.
-
-**Cross-validation Results**
+####
 
 | LDA Model                 | Log Likelihood    |  Perplexity|
 |---------------------------|-------------------|------------|
@@ -115,7 +107,7 @@ This topic likely covers aspects of problem-solving, modeling, and the applicati
 
 The final score on test set is R2 - 0.834, MAE - 1,921
 
-## Challenges and Further Model Improvement
+#### Challenges and Further Model Improvement
 
 - Data Availability : The dataset comprises only 500 data points, which is insufficient to cover all car models. This limitation constrains the model's ability to generalize across the full spectrum of vehicles.
 
