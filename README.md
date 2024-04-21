@@ -123,7 +123,7 @@ To prepare for topic modelling, the stopwords list from nltk was updated by addi
 
 | LDA Model                 | Log Likelihood    |  Perplexity|
 |---------------------------|-------------------|------------|
-| LDA Model (Before tuning) | = 79871           | 196        |
+| LDA Model (Before tuning) | - 79871           | 196        |
 | LDA Model (Before tuning) | - 79794           | 195        |
 
 
