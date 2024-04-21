@@ -108,7 +108,7 @@ As for text preprocessing, the urls, line breaks, and digits were removed. For s
 
 To prepare for topic modelling, the stopwords list from nltk was updated by adding custom stopwords that are domain-specific and reddit-specific slangs/words. For example, words like data science is likely to occur in majority of posts. Similarly, words like 'op' (Original poster) is quite common on Reddit.
 
-Custom Stopwords Removal:
+**Custom Stopwords Removal**:
 
 'back','go','like','get','take','feel','see','also','will','would','lot','stuff','maybe','even',
 'actually','probably','may','sure','post','around','one','still','someone','thing','analyst','might','want',
@@ -116,8 +116,10 @@ Custom Stopwords Removal:
 'yes','no','never','almost','anyone','science','scientist','scientists','data','op','ds','really','will','many',
 'much','something','everything','always','etc',
 
+**Experimenting with different parameters for vectorization/tokenization
 
-####
+**Hyperparameter tuning for LDA model using random-search
+
 
 | LDA Model                 | Log Likelihood    |  Perplexity|
 |---------------------------|-------------------|------------|
