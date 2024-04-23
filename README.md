@@ -23,7 +23,7 @@
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
 2. Data crawling script is available [here](https://github.com/khinydnlin/topic_modelling_ds_subreddit/blob/main/api_requests.py) within this repo.
 3. The raw data is available is [here](https://github.com/khinydnlin/topic_modelling_ds_subreddit/blob/main/reddit_data_top_posts.json).  
-4. Data processing and modelling scripts are documented in a [Jupyter notebook](https://github.com/khinydnlin/car_auction_price_predictions/blob/main/Car%20Auction%20Price%20Predictions.ipynb).
+4. Data processing and modelling scripts are documented in a [Jupyter notebook](https://github.com/khinydnlin/topic_modelling_ds_subreddit/blob/main/Topic%20Modelling%20%26%20Sentiment%20Analysis.ipynb).
 5. The project findings and other details can be found below:
 
 ## Project Description
