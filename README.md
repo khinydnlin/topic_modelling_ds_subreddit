@@ -135,7 +135,7 @@ To train an LDA model, we used random search to fine tune the hyperparameters.
 | LDA Model (After tuning) | - 79794            | 195        |
 
 
-#### Challenges and Further Model Improvement
+### Challenges and Further Model Improvement
 
 - Text mining is an iterative process that often involves a significant amount of subjective judgment. Through this process, I have identified several limitations in the algorithms used. For example, the VADER sentiment analysis tool fails to correctly interpret certain slangs and sarcastic expressions, occasionally misclassifying clearly negative terms like "bullshit" as positive.
 - There is substantial scope for enhancing the model by expanding the dataset, which could involve scraping additional comments to provide a richer data set. Furthermore, assigning topic clusters to each document could allow for more nuanced sentiment analysis across different topic types, rather than solely relying on flairs.
