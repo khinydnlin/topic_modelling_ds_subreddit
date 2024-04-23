@@ -21,9 +21,10 @@
 ## Getting Started
 
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is available [here](https://github.com/khinydnlin/car_auction_price_predictions/blob/main/dataset.csv) within this repo.   
-3. Data processing and modelling scripts are documented in a [Jupyter notebook](https://github.com/khinydnlin/car_auction_price_predictions/blob/main/Car%20Auction%20Price%20Predictions.ipynb).
-4. The project findings and other details can be found below:
+2. Data crawling script is available [here](https://github.com/khinydnlin/topic_modelling_ds_subreddit/blob/main/api_requests.py) within this repo.
+3. The raw data is available is [here](https://github.com/khinydnlin/topic_modelling_ds_subreddit/blob/main/reddit_data_top_posts.json).  
+4. Data processing and modelling scripts are documented in a [Jupyter notebook](https://github.com/khinydnlin/car_auction_price_predictions/blob/main/Car%20Auction%20Price%20Predictions.ipynb).
+5. The project findings and other details can be found below:
 
 ## Project Description
 
@@ -33,7 +34,7 @@ The following information were retrieved from the subreddit using Reddit API Wra
 
 Top Posts (2023)
 - date and time
-- flair
+- flair (topic of the post which can be manually tagged by users)
 - engagement score (upvotes minus downvotes)
 - titles
 - contents
@@ -54,17 +55,20 @@ It appears that the discussions around job market (possibly due to the massive l
 
 #### Sentiment Analysis
 
+Polarity scores indicate that discussions around networking and AI (highly trending topics) exhibit more positive sentiment. On the other hand, topics related to casual subjects, such as memes/ fun, register lower polarity scores although these topics are likely to have high engagement scores. This could also be attributed to the presence of sarcastic tones and slang in casual discussions, which VADER tends to recognise less effectively.
+
+
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/67ca1d7f-3993-4c82-9aa9-5b8605579b81)
 
 
-
+Next, to gain an alternative perspective, the sentiment distribution across various flair types was analysed. Generally, a positive sentiment prevails in the majority of the categories. However, posts related to general discussions, careers, memes, and statistics are more likely to exhibit negative sentiments. 
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/c881f882-5499-48a1-9da9-90ec0dc36bed)
 
 
-
 #### Topic Modelling
 
+Although users can manually tag posts with flairs on the subreddit, as noted previously, the majority of topics fall under the broad 'Discussion' category. This category includes a wide range of topics, including coding, careers, and job-related discussions. To accurately recategorise these themes, we are employing topic modelling technique.
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/990c8dbe-6b44-43a2-9ade-9a2a8ce32f8e)
 
@@ -104,9 +108,11 @@ This topic likely covers aspects of problem-solving, modeling, and the applicati
 
 #### Text Preprocessing
 
-As for text preprocessing, the urls, line breaks, and digits were removed. For sentiment analysis, Vader lexicon-based sentiment analyser was used due to its capability to detect emjois and informal language which is common in social media lanaguage. The compound polarity scores obtained from the analysis were then regrouped into three sentiment classes: positive ( > 0.05 ) , negative ( < 0.05 ), and neutral. 
+Text Preprocessing
 
-To prepare for topic modelling, the stopwords list from nltk was updated by adding custom stopwords that are domain-specific and reddit-specific slangs/words. For example, words like data science is likely to occur in majority of posts. Similarly, words like 'op' (Original poster) is quite common on Reddit.
+In the text preprocessing stage, URLs, line breaks, and digits were removed. For sentiment analysis, we utilized the VADER lexicon-based sentiment analyzer, chosen for its ability to detect emojis and informal language, which are prevalent in social media. The compound polarity scores derived from the analysis were categorised into three sentiment classes: positive (>0.05), negative (<0.05), and neutral.
+
+To prepare for topic modeling, the stopwords list from NLTK was updated with custom stopwords that are both domain-specific and Reddit-specific. For instance, phrases such as 'data science' are likely to appear in a majority of posts. Similarly, terms like 'op' (original poster) are frequently used on Reddit.
 
 **Custom Stopwords Removal**:
 
@@ -116,7 +122,11 @@ To prepare for topic modelling, the stopwords list from nltk was updated by addi
 'yes','no','never','almost','anyone','science','scientist','scientists','data','op','ds','really','will','many',
 'much','something','everything','always','etc',
 
-**Experimenting with different parameters for vectorization/tokenization**
+As Reddit is a hub for informal discussions, we noticed a limited diversity in the vocabulary used on the DS subreddit, particularly the frequent use of simple and common phrases such as 'work','make' and 'look'. This prevalence of basic vocabulary can complicate efforts to differentiate meanings, as many words that are used frequently tend to have broad applications and lack specificity. This poses a challenge in accurately interpreting the context and nuances of discussions.
+
+To  mitigate this, we experimented with different parameters for the tokenization process and different sets of stopwords. For vectorization, the max features were explored between 100 and 500. Increasing the max features negatively affect model performance.
+
+To train an LDA model, we used random search to fine tune the hyperparameters.
 
 **Hyperparameter tuning for LDA model using random-search**
 
@@ -124,12 +134,13 @@ To prepare for topic modelling, the stopwords list from nltk was updated by addi
 | LDA Model                 | Log Likelihood    |  Perplexity|
 |---------------------------|-------------------|------------|
 | LDA Model (Before tuning) | - 79871           | 196        |
-| LDA Model (Before tuning) | - 79794           | 195        |
+| LDA Model (After tuning) | - 79794            | 195        |
 
 
 #### Challenges and Further Model Improvement
 
-- Text mining is an iterative process and involved a lot of subjective judgement. During this process, I learned the shortcomings of some algorithm. For example, Vader fails to detect certain slangs and sarcasms such as incorrectly identifying "bullshit" as a positive statement.
+- Text mining is an iterative process that often involves a significant amount of subjective judgment. Through this process, I have identified several limitations in the algorithms used. For example, the VADER sentiment analysis tool fails to correctly interpret certain slangs and sarcastic expressions, occasionally misclassifying clearly negative terms like "bullshit" as positive.
+- There is substantial scope for enhancing the model by expanding the dataset, which could involve scraping additional comments to provide a richer data set. Furthermore, assigning topic clusters to each document could allow for more nuanced sentiment analysis across different topic types, rather than solely relying on flairs.
 
 
 
