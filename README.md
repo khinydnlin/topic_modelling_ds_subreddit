@@ -16,7 +16,7 @@
 * Python
 * NLTK
 * Tfidf Vectorizer (sklearn)
-* LDA (sklearn) 
+* Latent Dirichlet Allocation (LDA) (sklearn)
 
 ## Getting Started
 
@@ -71,6 +71,8 @@ Next, to gain an alternative perspective, the sentiment distribution across vari
 Although users can manually tag posts with flairs on the subreddit, as noted previously, the majority of topics fall under the broad 'Discussion' category. This category includes a wide range of topics, including coding, careers, and job-related discussions. To accurately recategorise these themes, we are employing topic modelling technique.
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/990c8dbe-6b44-43a2-9ade-9a2a8ce32f8e)
+
+We were able to identify five key themes by using the LDA technique:
 
 - **Practical Application and Collboration**
 
