@@ -72,31 +72,31 @@ Although users can manually tag posts with flairs on the subreddit, as noted pre
 
 ![image](https://github.com/khinydnlin/topic_modelling_ds_subreddit/assets/145341635/990c8dbe-6b44-43a2-9ade-9a2a8ce32f8e)
 
-- Practical Application and Collboration
+- **Practical Application and Collboration**
 
 Top words: **use work people model business code ml know mean test engineering need write**
 
 This topic is likely about the application of data science in business and team settings, focusing on modeling, machine learning, and the integration of coding in business processes. Keywords such as "use," "model," "business," "ml" (machine learning), "code," and "engineering" reflect discussions on how data science is applied in real-world scenarios, possibly involving teamwork and collaboration.
 
-- Job Seeking and Career Progression
+- **Job Seeking and Career Progression**
 
 Top words: **job project role interview great question apply ask year position experience change try**
 
 This topic appears to center around the job market and career development in the data science field. Keywords like "job," "project," "role," "interview," "apply," "position," and "experience" suggest discussions related to finding new job opportunities, applying for positions, and discussing the experiences necessary for certain roles or career changes.
 
-- Skills and Tools
+- **Skills and Tools**
 
 Top words: **look good make python skill need think know big job level field sql**
 
 This topic focuses on the practical skills and tools necessary in data science, such as Python, SQL, and general analytical skills. Terms like "python," "skill," "sql," and "big company" emphasize the technical competencies needed to succeed in the field and discussions about how to improve or acquire these skills.
 
-- Learning and Career Development
+- **Learning and Career Development**
 
 Top words: **time learn start give help pay company work day best career point course**
 
 Here, the emphasis seems to be on the learning journey and career advice within data science. Keywords like "learn," "start," "help," "career," "course," and "company" suggest advice threads, sharing of learning resources, or discussions about navigating career paths and workplace environments in data science.
 
-- Problem-Solving and Research in Data Science (Projects-oriented)
+- **Problem-Solving and Research in Data Science (Projects-oriented)**
 
 Top words: **problem model first analytics come ai hard new team product tell example research**
 
