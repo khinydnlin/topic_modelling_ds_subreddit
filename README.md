@@ -108,8 +108,6 @@ This topic likely covers aspects of problem-solving, modeling, and the applicati
 
 #### Text Preprocessing
 
-Text Preprocessing
-
 In the text preprocessing stage, URLs, line breaks, and digits were removed. For sentiment analysis, we utilized the VADER lexicon-based sentiment analyzer, chosen for its ability to detect emojis and informal language, which are prevalent in social media. The compound polarity scores derived from the analysis were categorised into three sentiment classes: positive (>0.05), negative (<0.05), and neutral.
 
 To prepare for topic modeling, the stopwords list from NLTK was updated with custom stopwords that are both domain-specific and Reddit-specific. For instance, phrases such as 'data science' are likely to appear in a majority of posts. Similarly, terms like 'op' (original poster) are frequently used on Reddit.
